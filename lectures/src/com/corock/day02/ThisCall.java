@@ -1,4 +1,4 @@
-package com.corock.day01;
+package com.corock.day02;
 
 public class ThisCall {
 
