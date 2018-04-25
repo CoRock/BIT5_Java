@@ -27,13 +27,13 @@ public class MyMain {
 			case 2: mem = mq;	mem.menu();		break;
 			case 3:
 				System.out.println("式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式");
-				System.out.println("Exit program, bye :)");
+				System.out.println("*** Exit program, bye :)");
 				System.out.println("式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式");
 				System.exit(0);
 			default:
 				System.out.println("式式式式式式式式式式式式式式式式式式式式式式式式式式式式式式");
-				System.out.println("You entered incorrect number!");
-				System.out.println("Please tell me again.");
+				System.out.println("*** You entered incorrect number!");
+				System.out.println("*** Please tell me again.");
 				continue;
 			}
 		} while (true);
