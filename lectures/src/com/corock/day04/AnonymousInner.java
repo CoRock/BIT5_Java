@@ -6,7 +6,6 @@ abstract class Abs {
 }
 
 public class AnonymousInner {
-	
 	private int a = 10;
 	public int b = 20;
 	protected static int c = 30;
@@ -24,5 +23,4 @@ public class AnonymousInner {
 		AnonymousInner ai = new AnonymousInner();
 		ai.abs.disp();
 	}
-	
 }

@@ -1,7 +1,7 @@
 package com.corock.day04;
 
 public class StaticInner {
-
+	
 	private int a = 10;
 	public int b = 20;
 	
@@ -19,7 +19,7 @@ public class StaticInner {
 	
 	public static void main(String[] args) {
 		StaticInner.Member si = new StaticInner.Member();
-		si.disp();
+		si.disp();		
 	}
 	
 }

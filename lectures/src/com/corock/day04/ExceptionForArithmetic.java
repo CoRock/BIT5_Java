@@ -2,8 +2,8 @@ package com.corock.day04;
 
 import java.util.Scanner;
 
-public class ExceptArithmetic {
-
+public class ExceptionForArithmetic {
+	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -24,11 +24,11 @@ public class ExceptArithmetic {
 			return;
 		} finally {
 			// finally is a high priority return
-			System.out.println("hi test1");
+			System.out.println("hi finally");
 		}
 		
-		System.out.println("hi test2");
+		System.out.println("hi out of try~catch");
 		
-	}	
+	}
 	
 }

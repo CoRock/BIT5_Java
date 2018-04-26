@@ -2,7 +2,6 @@ package com.corock.day04;
 
 public class InstanceInner {
 
-	// fields
 	private int a = 10;
 	public int b = 20;
 	protected static int c = 30;
@@ -28,6 +27,5 @@ public class InstanceInner {
 		// case 2
 		InstanceInner.Member m2 = new InstanceInner().new Member();
 		m2.disp();
-	}	// end of main
-	
+	}
 }
