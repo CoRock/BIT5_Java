@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회원가입</title>
+    <style type="text/css">
+      input[type='text'] {
+        size: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="joinAction.jsp" accept-charset="utf-8" name="person_info" method="post" onsubmit="return validate()">
+      <table width="650" height="300" border="1" style="border-collapse: collapse;" align="center">
+        <tr>
+          <td colspan="2" align="center" bgcolor="#AF9FEC"><b>회원 기본 정보</b></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD" width="120"><b>아이디:</b></td>
+          <td>
+            <input type="text" id="my_Id" minlength="4" maxlength="12" autocomplete="false" />&nbsp; 4~12자의 영문
+            대소문자와 숫자로만 입력
+          </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>비밀번호:</b></td>
+          <td>
+            <input type="password" id="my_Pw" minlength="4" maxlength="12" />&nbsp; 4~12자의 영문 대소문자와 숫자로만
+            입력
+          </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>비밀번호확인:</b></td>
+          <td><input type="password" id="my_Pw2" minlength="4" maxlength="12" /></td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>메일주소:</b></td>
+          <td><input type="email" id="e_mail" />&nbsp;예) id@domain.com</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>이름:</b></td>
+          <td><input type="text" id="my_name" /></td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center" bgcolor="#AF9FEC"><b>개인 신상 정보</b></td>
+        </tr>
+        <tr>
+          <!-- /////////////////////////// -->
+          <td align="center" bgcolor="#BDBDBD"><b>주민등록번호:</b></td>
+          <td><input type="text" id="my_ssn" minlength="13" maxlength="13" />&nbsp; 예) 1234561234567</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>생일:</b></td>
+          <td>
+            <input type="text" id="my_birthday" size="5" minlength="4" maxlength="4" />년
+            <select name="SelectMonth" id="my_month">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option> </select
+            >월
+
+            <select name="SelectDay" id="my_date">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option> </select
+            >일
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>관심분야:</b></td>
+          <td>
+            <input type="checkbox" id="hobby" />컴퓨터 <input type="checkbox" id="hobby" />인터넷
+            <input type="checkbox" id="hobby" />여행 <input type="checkbox" id="hobby" />영화감상
+            <input type="checkbox" id="hobby" />음악감상
+          </td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#BDBDBD"><b>자기소개:</b></td>
+          <td><textarea name="myIntro" rows="7" cols="70"></textarea></td>
+        </tr>
+      </table>
+
+      <table width="650" height="50" border="0" align="center" style="border: none;">
+        <tr>
+          <td colspan="2" align="center" height="50">
+            <input type="submit" value="회원 가입" />
+            <input type="reset" id="reset" value="다시 입력" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
